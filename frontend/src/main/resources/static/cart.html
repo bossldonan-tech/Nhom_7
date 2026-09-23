@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gio hang - PTPMHDV Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+    <h1 class="page-title">Gio hang cua ban</h1>
+    <div id="error-box"></div>
+    <div class="card" id="cart-box"></div>
+    <div id="cart-summary" style="margin-top:16px"></div>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script>
+    renderHeader("cart");
+    initCartPage();
+</script>
+</body>
+</html>

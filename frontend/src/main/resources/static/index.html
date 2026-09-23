@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTPMHDV Shop - Thiet bi dien tu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+    <h1 class="page-title">San pham thiet bi dien tu</h1>
+
+    <div id="error-box"></div>
+
+    <div class="filters">
+        <input type="text" id="search-input" placeholder="Tim kiem san pham theo ten hoac thuong hieu...">
+        <select id="category-select">
+            <option value="">Tat ca danh muc</option>
+        </select>
+    </div>
+
+    <div id="product-grid" class="product-grid"></div>
+
+    <div id="pagination" style="margin-top:24px; text-align:center"></div>
+</main>
+
+<footer>© 2026 PTPMHDV Shop - Do an Microservices &amp; API Gateway</footer>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script>
+    renderHeader("home");
+    initProductsPage();
+</script>
+</body>
+</html>

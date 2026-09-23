@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toan - PTPMHDV Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+    <h1 class="page-title">Thanh toan don hang</h1>
+    <div id="error-box"></div>
+
+    <div style="display:grid; grid-template-columns: 1.3fr 1fr; gap:24px;">
+        <div class="card">
+            <h3>Thong tin giao hang</h3>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label>Ho ten nguoi nhan</label>
+                    <input type="text" id="shippingName" required>
+                </div>
+                <div class="form-group">
+                    <label>So dien thoai</label>
+                    <input type="text" id="shippingPhone" required>
+                </div>
+                <div class="form-group">
+                    <label>Dia chi giao hang</label>
+                    <input type="text" id="shippingAddress" required>
+                </div>
+                <div class="form-group">
+                    <label>Phuong thuc thanh toan</label>
+                    <select id="paymentMethod">
+                        <option value="COD">Thanh toan khi nhan hang (COD)</option>
+                        <option value="BANK_TRANSFER">Chuyen khoan ngan hang</option>
+                        <option value="CREDIT_CARD">The tin dung</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-block">Dat hang</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Don hang cua ban</h3>
+            <div id="order-summary"></div>
+        </div>
+    </div>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/checkout.js"></script>
+<script>
+    renderHeader("cart");
+    initCheckoutPage();
+</script>
+</body>
+</html>

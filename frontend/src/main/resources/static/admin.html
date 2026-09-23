@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan tri - PTPMHDV Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+
+<main class="container">
+    <h1 class="page-title">Trang quan tri</h1>
+    <div id="error-box"></div>
+
+    <div class="tabs">
+        <button id="tab-products" onclick="switchTab('products')">San pham</button>
+        <button id="tab-categories" onclick="switchTab('categories')">Danh muc</button>
+        <button id="tab-orders" onclick="switchTab('orders')">Don hang</button>
+    </div>
+
+    <div id="panel-products" class="tab-panel">
+        <div style="display:grid; grid-template-columns: 1fr 1.3fr; gap:24px;">
+            <div class="card">
+                <h3 id="product-form-title">Them san pham moi</h3>
+                <form id="product-form">
+                    <div class="form-group">
+                        <label>Ten san pham</label>
+                        <input type="text" id="product-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mo ta</label>
+                        <textarea id="product-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Gia (VND)</label>
+                        <input type="number" id="product-price" min="0" step="1000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>So luong ton</label>
+                        <input type="number" id="product-stock" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Thuong hieu</label>
+                        <input type="text" id="product-brand">
+                    </div>
+                    <div class="form-group">
+                        <label>URL hinh anh</label>
+                        <input type="text" id="product-image">
+                    </div>
+                    <div class="form-group">
+                        <label>Danh muc</label>
+                        <select id="product-category"></select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Luu san pham</button>
+                    <button type="button" class="btn btn-outline" onclick="resetProductForm()">Lam moi</button>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Danh sach san pham</h3>
+                <div id="product-table"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="panel-categories" class="tab-panel">
+        <div style="display:grid; grid-template-columns: 1fr 1.3fr; gap:24px;">
+            <div class="card">
+                <h3>Them danh muc</h3>
+                <form id="category-form">
+                    <div class="form-group">
+                        <label>Ten danh muc</label>
+                        <input type="text" id="category-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mo ta</label>
+                        <input type="text" id="category-description">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Luu danh muc</button>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Danh sach danh muc</h3>
+                <div id="category-table"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="panel-orders" class="tab-panel">
+        <div id="admin-orders-box"></div>
+    </div>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+<script>
+    renderHeader("admin");
+    initAdminPage();
+</script>
+</body>
+</html>
