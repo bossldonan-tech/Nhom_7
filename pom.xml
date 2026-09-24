@@ -15,11 +15,13 @@
         <module>common</module>
         <module>eureka-server</module>
         <module>api-gateway</module>
-        <module>user-service</module>
-        <module>product-service</module>
-        <module>order-service</module>
-        <module>payment-service</module>
         <module>frontend</module>
+        <!-- Them lai dong ben duoi khi ban day (push) module tuong ung len GitHub,
+             neu khong Maven se bao loi "module does not exist" cho ca reactor. -->
+        <!-- <module>user-service</module> -->
+        <!-- <module>product-service</module> -->
+        <!-- <module>order-service</module> -->
+        <!-- <module>payment-service</module> -->
     </modules>
 
     <properties>
