@@ -1,0 +1,15 @@
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\config\DataInitializer.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\controller\CategoryController.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\controller\ProductController.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\dto\CategoryRequest.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\dto\CategoryResponse.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\dto\ProductRequest.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\dto\ProductResponse.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\entity\Category.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\entity\Product.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\ProductServiceApplication.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\repository\CategoryRepository.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\repository\ProductRepository.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\security\SecurityConfig.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\service\CategoryService.java
+C:\ptpmhdv\product-service\src\main\java\com\ptpmhdv\product\service\ProductService.java
